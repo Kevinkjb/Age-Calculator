@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+/* MAIN SECTION */
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.age-container{
+    display: flex;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem 1rem 4rem;
+    box-shadow: 0 0 4px 1px black;
+}
+
+/* ====== */
+
+/* Image button arrow down and hr section */
+hr{
+    color: hsl(0, 0%, 86%);
+    opacity: .4;
+    width: 50rem;
+    height: 1px;
+}
+
+.arrow-img{
+    padding: 1.8rem;
+    width: 7rem;
+}
+.submit-button{
+    border-radius: 50%;
+    background-color:  hsl(259, 100%, 65%);
+    border: none;
+}
+/* ------------------------------------ */
+
+/* Age input section */
+
+input{
+    width: 80%;
+    padding: 1.3rem .3rem 1.3rem 1.5rem;
+    margin: 0 .6rem 1.5rem 0;
+    color: hsl(0, 1%, 44%);
+    font-size: 2rem;
+    font-weight: 800;
+    border-radius: 5px;
+    border: 2px solid hsl(0, 0%, 86%);
+    margin-top: .8rem;
+}
+input:focus{
+    outline: none;
+}
+.days, .months, .years{
+    width: 15rem;
+}
+
+.button-el{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+/* ===== */
+
+
+/* Age result section */
+.year-span-design{
+    color: hsl(259, 100%, 65%);
+    font-size: 7rem;
+    font-weight: 900;
+}
+.date-info{
+    font-size: 7rem;
+    font-weight: 900;
+    font-style: italic;
+}
+/* ---- */
+
+.attribution {
+     font-size: 11px; 
+     text-align: center;
+    }
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+/* Responsive Section */
+
+@media screen and (max-width: 831px) {
+    .main-container{
+        width: 45rem;
+    }
+    .submit-button{
+        text-align: center;
+        position: absolute;
+        right: auto;
+    }
+    input{
+        margin-bottom: 7rem;
+    }
+    .age-result{
+        margin-top: 6rem;
+    }
+}
+@media screen and (max-width: 610px) {
+    .main-container{
+        width: 40rem;
+    }
+    input{
+        width: 9.8rem;
+    }
+    hr{
+        width: 32rem;
+    }
+    .year-span-design{
+        font-size: 5rem;
+    }
+    .date-info{
+        font-size: 5rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    
+}
+@media screen and (max-width: 560px) {
+    .main-container{
+        width: 30rem;
+        padding: 3rem;
+    }
+    .year-span-design{
+        font-size: 3rem;
+    }
+    .date-info{
+        font-size: 3rem;
+    }
+    label{
+        font-size: .8rem;
+    }
+    hr{
+        width: 23rem;
+    }
+    
+    .arrow-img{
+        padding: 1rem;
+        width: 5rem;
+    }
+    input{
+        width: 7.4rem;
+        height: 40%;
+        font-size: 1rem;
+        padding: .8rem .3rem .8rem 1rem;
+    }
+
+}
